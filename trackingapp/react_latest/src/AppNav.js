@@ -23,6 +23,7 @@ class AppNav extends Component {
                   <NavItem>
                     <NavLink href="/my_dashboard">My Dashboard</NavLink>
                   </NavItem>
+
                 
                 </Nav>
           

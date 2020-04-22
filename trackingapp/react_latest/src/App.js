@@ -1,7 +1,7 @@
 // import React from 'react';
 import logo from "./logo.svg";
 import React, {Component } from 'react';
-import { Route, Link, BrowserRouter as Router, Switch, Redirect} from "react-router-dom";
+import { Route, Link, BrowserRouter as Router, Switch, Redirect, browserHistory,} from "react-router-dom";
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Task from "./Task";
@@ -23,7 +23,8 @@ class App extends Component {
           <Route path="/create_task" exact={true} component={Create_task} />
           <Route path="/my_dashboard" exact={true} component={My_dashboard} />
           <Route path="/edittaskform" exact={true} component={EditTaskForm} />
-          <Route component ={NotFound}/>
+          <Route path='/404' exact={true} component ={NotFound} />
+          <Redirect from='*' to="/404" />
         </Switch>
       </Router>
     );

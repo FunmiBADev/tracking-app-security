@@ -12,7 +12,7 @@ class NotFound extends Component {
             <div>
              <AppNav/>
              <h2 style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
-               Welcome to my dashboard!
+               Page Not Found 404
                </h2>
               </div>
             );
